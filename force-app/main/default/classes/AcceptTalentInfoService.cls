@@ -66,6 +66,11 @@ global without sharing class AcceptTalentInfoService {
         return resp;
     }
 
+    /********************************************************************************************************
+    *  @description  checkTalentSkillMeetMDTCondition - This is the main method to check the talent skill meet custom metadata type configuration 
+    *  @return WebServiceEntityClass.response : this is a return statement and having return result as failure or success  
+    *  @param talentSkill - Talent skill info from request param
+    *********************************************************************************************************/
     private static Boolean checkTalentSkillMeetMDTCondition(String talentSkill) {
         Boolean meetMDTCondition = true;
         // get talent sync condition from custom metadata type
