@@ -7,8 +7,8 @@
  * 2022-7-21    Xueqiang Duan   Create
  */
 
- @isTest(seeAllData=false)
-private class AcceptTalentInfoServiceTest {
+@isTest(seeAllData=false)
+public class AcceptTalentInfoServiceTest {
     
     @isTest
     public static void talentInfoServiceTestSuccess() {
