@@ -51,6 +51,8 @@ global without sharing class AcceptTalentInfoService {
             System.debug('leadUpsertList: ' + leadUpsertList);
             if (leadUpsertList.size() > 0){
                 upsert leadUpsertList External_ID__c;
+            } else {
+                return WebServiceEntityClass.responseMethod(WebServiceEntityClass.successCode, '没有符合要求的候选人信息可以录入！' , WebServiceEntityClass.successStatus);
             }
         }catch(Exception e){
             System.debug('Error Message: ' + e);
